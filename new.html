@@ -19,12 +19,12 @@
 </style>
   
 </head>
-<body style="background-color:#f6f6f6;">
+<body style="background:url(b31.png);">
 <div class="topbar">
 	<ul class="toplist">
-	<li><a>Home</a> | </li>
-	<li><a>About Us</a> | </li>
-	<li><a>Contact Us</a> | </li>
+	<li><a href="new.html">Home</a> | </li>
+	<li><a href="about.html">About Us</a> | </li>
+	<li><a href="contact.html">Contact Us</a> | </li>
 	<li>Affiliation No.:xxxx</li>
 	<li class="pull-right"><a>Student Login</a></li>
 	<li class="pull-right"><a>Staff Login</a> | </li>
@@ -34,12 +34,12 @@
 <nav class="navbar navbar-inverse" style="background-color:white;border-bottom:none;border-right:none;border-left:none;border-radius:0%;">
 	<div class="container-fluid">
 	<img src="School Logo.jpg" class="img-circle" alt="School-Logo" height="100px" width="auto">
-	<a class="navbar-brand" style="position:absolute;padding-left:35px;color:#385b9f;text-align:left;font-size:25px;">O.P. Garg<br><br>Memorial Public School</a>
+	<a class="navbar-brand" href="new.html" style="position:absolute;padding-left:35px;color:#385b9f;text-align:left;font-size:25px;font-family:Franklin Gothic;line-height:130%;"><strong>O.P. Garg<br>Memorial Public School</strong></a>
 	 
 	 
 	 
 	<ul class="nav navbar-nav navbar-right" style="color:#385b95;padding-right:150px;padding-top:10px;">
-  		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" ><img src="school.png"  height="22%" width="auto"><div><br>The School</div></img></a>
+  		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" ><img src="school.png"  height="22%" width="auto"><div>The School</div></img></a>
   		<ul class="dropdown-menu">
       	<li><a href="#">Link 1</a></li>
       	<li><a href="#">Link 1</a></li>
@@ -47,7 +47,7 @@
     	</ul>
   		</li>
   		
-  		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="academics.png"  height="22%" width="auto"><div><br>Academics</div></img></a>
+  		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="academics.png"  height="22%" width="auto"><div>Academics</div></img></a>
   		<ul class="dropdown-menu">
       	<li><a href="#">Link 1</a></li>
       	<li><a href="#">Link 1</a></li>
@@ -55,7 +55,7 @@
     	</ul>
   		</li>
   		
-  		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="facilities.png"  height="22%" width="auto"><div><br>Facilities</div></img></a>
+  		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="facilities.png"  height="22%" width="auto"><div>Facilities</div></img></a>
   		<ul class="dropdown-menu">
       	<li><a href="#">Link 1</a></li>
       	<li><a href="#">Link 1</a></li>
@@ -63,7 +63,7 @@
     	</ul>
   		</li>
   		
-  		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="admissions.png"  height="22%" width="auto"><div><br>Admissions</div></img></a>
+  		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="admissions.png"  height="22%" width="auto"><div>Admissions</div></img></a>
   		<ul class="dropdown-menu">
       	<li><a href="#">Link 1</a></li>
       	<li><a href="#">Link 1</a></li>
@@ -71,7 +71,7 @@
     	</ul>
   		</li>
   		
-  		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="gallery.png"  height="22%" width="auto"><div><br>Gallery</div></img></a>
+  		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="gallery.png"  height="22%" width="auto"><div>Gallery</div></img></a>
   		<ul class="dropdown-menu">
       	<li><a href="#">Link 1</a></li>
       	<li><a href="#">Link 1</a></li>
@@ -84,7 +84,7 @@
 	</nav>
 	
 <div class="container">
-  <br>
+  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -124,14 +124,25 @@
     </a>
   </div>
 </div>
+
+<div class="container">
+	<div class="picbar">
+		<ul class="piclist">
+			<li><a><img class="img-circle" src="P_20160416_105622.jpg" height="200" width="200px"><span class="caption" >Our School</span></img></a></li>
+			<li><a><img class="img-circle" src="IMG-20160407-WA0058.jpg" height="200px" width="200px"><span class="caption">Student Life</span></img></a></li> 
+			<li><a><img class="img-circle" src="P_20160416_105026.jpg" height="200px" width="200px"><span class="caption">Academics</span></img></a></li>
+			<li><a><img class="img-circle"  src="Press Pic.jpg" height="200px" width="200px"><span class="caption">Non Academic</span></img></a></li>
+		</ul>
+	</div>
+</div>
 	
 <div class="container">
 	<div class="col-md-3 col-xs-3" style="padding-top:20px;">
 		<ul class="sidenav">
-  			<li><a href="#home">Home</a></li>
-  			<li><a href="#news">News</a></li>
-  			<li><a href="#contact">Contact</a></li>
-  			<li><a href="#about">About</a></li>
+  			<li><a href="about.html"> <span class="glyphicon glyphicon-education"></span>    About</a></li>
+  			<li><a href="#student_info"> <span class="glyphicon glyphicon-user"></span>  Student Information</a></li>
+  			<li><a href="#result"><span class="glyphicon glyphicon-list-alt"></span>   Result</a></li>
+  			<li><a href="#academic_calender"> <span class="glyphicon glyphicon-calendar"></span>   Acadamic Calender</a></li>
 		</ul>
 	</div>
 	<div class="col-md-6 col-xs-6"></div>
