@@ -1,9 +1,14 @@
+.topnav{position:fixed;
+		z-index:1000;
+		width:100%;
+		margin:none;
+		min-height:90px;
+}
 .topbar {
 	background-color: #ed6639;
 	min-height:auto;
 	width:100%;
-	position:fixed;
-	z-index:1030;
+	position:relative;
 }
 
 .toplist>li{display:inline-block;
@@ -63,7 +68,7 @@ a:hover{color:darkblue;
 				border:none;
 				border-radius:none;
 				min-height:75px;
-				margin-top:40px;
+				margin-top:0px;
 }
 
 .navbar-default .navbar-nav > li > a:hover{
@@ -176,5 +181,4 @@ a:hover{color:darkblue;
 }
 
 
-div {border: 1px solid black;
-		display:block;} 
+
