@@ -2,30 +2,32 @@
 		z-index:1000;
 		width:100%;
 		margin:none;
-		min-height:90px;
+		min-height:70px;
 }
 .topbar {
 	background-color: #ed6639;
-	min-height:auto;
+	min-height:15px;
 	width:100%;
 	position:relative;
 }
 
+.toplist{margin:0px;padding-left:15px;}
+
 .toplist>li{display:inline-block;
 			position:relative;
-		   padding-right:10px;
-		   padding-top:10px;
-		   padding-left:none;
-		   margin-left:5px;
+		   padding-top:5px;
+		   margin:none;
 		   color:#fff;
 		   font-size:15px;
 		   font-family:calibri;
+		   vertical-align:center;
 		   }
-.toplist a {display:inline-block:
-		   
+.toplist a {display:inline-block;
+		   padding:none;
 		   margin:0px;
 		   color:#fff;
 		   font-family:calibri;
+		   vertical-align:center;
 		   }
 a{cursor:pointer;
 	}
@@ -67,9 +69,21 @@ a:hover{color:darkblue;
 				background:#fff;
 				border:none;
 				border-radius:none;
-				min-height:75px;
+				min-height:100px;
 				margin-top:0px;
+				position:relative;
 }
+
+.navbar-brand img{position:relative;
+				  padding-left:30px;
+				  padding-top:0px;
+				  padding-left:0px;
+				  float:center;
+}
+
+
+.custom_custom{padding:0px;
+				width:100%;}
 
 .navbar-default .navbar-nav > li > a:hover{
     color: #7f909a;}
@@ -80,7 +94,17 @@ a:hover{color:darkblue;
 	.navbar-default .navbar-nav>li>a {
     color: #ed6639;
     text-align:center;
-    padding:30px;
+    padding:10px;
+    position:relative;
+    display:inline-block;
+	}
+	
+	.navbar-default .navbar-nav>li {
+    color: #ed6639;
+    text-align:center;
+    padding:10px;
+    position:relative;
+    display:inline-block;
 	}
 	
 	.navbar-default .navbar-nav > .open > a,
@@ -135,7 +159,7 @@ a:hover{color:darkblue;
     .navbar-nav .open > li {color:black;
     }
   	
-  	.carousel{height:30%;
+  	.carousel{height:30%;width=100%;
   			
   	}
   	
@@ -153,13 +177,14 @@ a:hover{color:darkblue;
 }
 
 
-.piclist>div>li{display:block;
-				
+.picbar>div{display:block;
+			width:25%;
+			text-align:center;
 }
 
 
   
-.piclist>div>li>a {
+.picbar>div>a {
 	font-size:25px;
 	font-family:franklin gothic;
     display: block;
@@ -168,16 +193,13 @@ a:hover{color:darkblue;
     color:#385b9f;
 }
 
-.piclist>div>li>a>img{margin-bottom:10px;
+.picbar>div>a>img{margin-bottom:10px;
 }
 
-.piclist>div>li>p{text-align:center;
+.piclist>div>p{text-align:center;
 					
 					font-family:franklin gothic;
 					font-size:18px;
-}
-
-.piclist>div{text-align:center;
 }
 
 

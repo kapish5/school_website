@@ -5,22 +5,30 @@
   
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="width=device-width,maximum-scale=1.0,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes" name="viewport">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   
+  <link rel="stylesheet" href="main2.css" type="text/css">
+  
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   
   <link rel="stylesheet" href="main2.css" type="text/css">
+  <script>
+  	function fixer()
+  		{
+  			var tpnvht = $(".topnav").height();
+  			tpnvht = tpnvht+50;
+  			$(".body-wrap").css("margin-top",tpnvht);
+  		}
+  </script>
   
-<style>
-	
-	
-  
-</style>
+
   
 </head>
-<body style="background:url(b31.png);position:relative;min-height:100%;top:0px;">
+<body style="background:url(b31.png);position:relative;min-height:100%;top:0px;" onload="fixer()">
+
 <div class="topnav">
 
 <div class="topbar">
@@ -28,7 +36,7 @@
 <div class="row" > 
 	<div class="col-md-6">
 	<ul class="toplist">
-	<li><a href="new.html">Home</a> | </li>
+	<li><a href="new2.html">Home</a> | </li>
 	<li><a href="about.html">About Us</a> | </li>
 	<li><a href="contact.html">Contact Us</a> | </li>
 	<li>Affiliation No.:xxxx</li>
@@ -47,14 +55,16 @@
 <nav   class="navbar navbar-default">
 	<div class="container-fluid">
 	<div class="row">
-	<div class="col-md-4 col-xs-4">
+	<div class="moduletable_custom col-md-6" style="min-height:85px;">
+	<div class="custom_custom col-md-5">
 	<div class="navbar-header">
-	<a class="navbar-brand" href="new.html"><img src="School Logo.jpg" class="img-responsive" alt="School-Logo" height="100px" width="auto"></a>
+	<a class="navbar-brand" href="new2.html"><img src="School Logo.jpg" height="85px" width="auto;" alt="School-Logo"></a>
 	 </div>
 	 </div>
-
-	 <div class="col-md-8 col-xs-8">
-		<ul class="nav navbar-nav navbar-right" style="color:#385b95;padding-right:70px;">
+	 </div>
+	
+	 <div class="col-md-6">
+		<ul class="nav navbar-nav nav-position" style="color:#385b95;float:center;padding:0px;">
   		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" ><img src="school.png"  height="22%" width="auto"><div>The School</div></img></a>
   		<ul class="dropdown-menu">
       	<li><a href="#">Link 1</a></li>
@@ -106,27 +116,28 @@
 
 </div>
 	
-<section class="body-wrap" style="width:100%;margin-top:180px;position:absolute;">
+<div class="body-wrap" style="width:100%;margin-top:180px;position:absolute;">
 	<div class="container-fluid">
-	<div class="row">
 	
-	<div class="col-md-3 col-xs-3">
 	
-		<ul class="sidenav">
+	<div class="col-md-3">
+		<div class="sidenav">
+		
+		<ul>
   			<li><a href="about.html"> <span class="glyphicon glyphicon-education"></span>    About</a></li>
   			<li><a href="#student_info"> <span class="glyphicon glyphicon-user"></span>  Student Information</a></li>
   			<li><a href="#result"><span class="glyphicon glyphicon-list-alt"></span>   Result</a></li>
   			<li><a href="#academic_calender"> <span class="glyphicon glyphicon-calendar"></span>   Acadamic Calender</a></li>
 		</ul>
-		
+	</div>
 	</div>
 
 	
 	
 
-	<div class="col-md-9 col-xs-9">
-  		<div class="row">
+	<div class="col-md-9">
   		<div class="container-fluid">
+  		<div class="row">
   		<div id="myCarousel" class="carousel slide" data-ride="carousel">
   		  <!-- Indicators -->
     		<ol class="carousel-indicators">
@@ -166,28 +177,26 @@
     </a>
     </div>
   </div>
-</div>
 
 
-<div class="row">
-	<div class="container-fluid">
+
+	<div class="row">
 	<div class="picbar" >
-		<ul class="piclist" >
 			
-			<div class="col-md-3 col-xs-3" style="display:block;">
-				<li><a  href="#Our School"><img class="img-circle" src="P_20160416_105622.jpg" height="170" width="170px"><div>Our School</div></img></a><br><br><p>Inculcating Culture of Active Learning in the School</p></li>
+			<div class="col-md-3">
+				<a  href="#Our School"><img class="img-circle" src="P_20160416_105622.jpg" height="170" width="170px"><div>Our School</div></img></a><br><br><p>Inculcating Culture of Active Learning in the School</p>
 			</div>
 			
-			<div class="col-md-3 col-xs-3"  style="display:block;">
-				<li><a  href="#Student Life"><img class="img-circle" src="IMG-20160407-WA0058.jpg" height="170px" width="170px"><div>Student Life</div></img></a><br><br><p>Committed to educating and nurturing of all students so they may grow towards responsible global citizenship</p></li> 
+			<div class="col-md-3">
+				<a  href="#Student Life"><img class="img-circle" src="IMG-20160407-WA0058.jpg" height="170px" width="170px"><div>Student Life</div></img></a><br><br><p>Committed to educating and nurturing of all students so they may grow towards responsible global citizenship</p>
 			</div>
 			
-			<div class="col-md-3 col-xs-3"  style="display:block;">
-				<li><a  href="#Academics"><img class="img-circle" src="P_20160416_105026.jpg" height="170px" width="170px"><div>Academics</div></img></a><br><br><p>Together we create a loving community of purposeful learning that focuses on the whole child;body,mind and spirit.</p></li>
+			<div class="col-md-3">
+				<a  href="#Academics"><img class="img-circle" src="P_20160416_105026.jpg" height="170px" width="170px"><div>Academics</div></img></a><br><br><p>Together we create a loving community of purposeful learning that focuses on the whole child;body,mind and spirit.</p>
 			</div>
 			
-			<div class="col-md-3 col-xs-3"  style="display:block;">
-				<li><a  href="#Non-Academic"><img class="img-circle"  src="Press Pic.jpg" height="170px" width="170px"><div>Non Academic</div></img></a><br><br><p>We encourage overall development of children through various extra curricular activities which facilitates creativity amongst them.</p></li>
+			<div class="col-md-3">
+				<a  href="#Non-Academic"><img class="img-circle"  src="Press Pic.jpg" height="170px" width="170px"><div>Non Academic</div></img></a><br><br><p>We encourage overall development of children through various extra curricular activities which facilitates creativity amongst them.</p>
 		    </div>
 		
 		</ul>
@@ -199,9 +208,9 @@
 	
 
 	</div>
-	</div>
-	</section>
+	
+	
 
-
+</div>
 </body>
 </html>
