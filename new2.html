@@ -18,16 +18,27 @@
   <script>
   	function fixer()
   		{
-  			var tpnvht = $(".topnav").height();
-  			tpnvht = tpnvht+50;
+  			var tpnvht = $("navbar-nav").height();
+  			tpnvht = tpnvht+15;
   			$(".body-wrap").css("margin-top",tpnvht);
+  			
   		}
+  	</script>
+  	<script>	
+  	function myFunction() {
+    var x = document.getElementById("mytopnav");
+    if (x.className === "navbar-nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar-nav";
+    }
+}
   </script>
   
 
   
 </head>
-<body style="background:url(b31.png);position:relative;min-height:100%;top:0px;" onload="fixer()">
+<body style="background:url(b31.png);position:relative;min-height:100%;top:0px;" >
 
 <div class="topnav">
 
@@ -62,11 +73,20 @@
 	 </div>
 	 </div>
 	 </div>
-	
+	 
 	 <div class="col-md-6">
-		<ul class="nav navbar-nav nav-position" style="color:#385b95;float:center;padding:0px;">
+		<ul class="nav navbar-nav nav-position" id="mytopnav" style="color:#385b95;float:center;padding:0px;">
+		
+		<li class="icon">
+   		 <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+ 	    </li>
+ 	 		
+		
   		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" ><img src="school.png"  height="22%" width="auto"><div>The School</div></img></a>
   		<ul class="dropdown-menu">
+      	<li><a href="#">Link 1</a></li>
+      	<li><a href="#">Link 1</a></li>
+      	<li><a href="#">Link 1</a></li>
       	<li><a href="#">Link 1</a></li>
       	<li><a href="#">Link 1</a></li>
       	<li><a href="#">Link 1</a></li>
@@ -100,12 +120,9 @@
   		</li>
   		
   		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="gallery.png"  height="22%" width="auto"><div>Gallery</div></img></a>
-  		<ul class="dropdown-menu">
-      	<li><a href="#">Link 1</a></li>
-      	<li><a href="#">Link 1</a></li>
-      	<li><a href="#">Link 1</a></li>
-    	</ul>
+  		
   		</li>
+  		
   		
 	</ul>
 	
@@ -116,11 +133,19 @@
 
 </div>
 	
-<div class="body-wrap" style="width:100%;margin-top:180px;position:absolute;">
+<div class="body-wrap" style="width:100%;margin-top:150px;position:absolute;">
 	<div class="container-fluid">
 	
 	
 	<div class="col-md-3">
+		<div class="container-fluid">
+		<div class="row">
+			<div class="news">
+				 ANNOUNCEMENTS
+			</div>
+		</div>
+		
+		<div class="row">
 		<div class="sidenav">
 		
 		<ul>
@@ -129,7 +154,9 @@
   			<li><a href="#result"><span class="glyphicon glyphicon-list-alt"></span>   Result</a></li>
   			<li><a href="#academic_calender"> <span class="glyphicon glyphicon-calendar"></span>   Acadamic Calender</a></li>
 		</ul>
-	</div>
+	    </div>
+		</div>
+		</div>
 	</div>
 
 	
@@ -181,22 +208,22 @@
 
 
 	<div class="row">
-	<div class="picbar" >
+	<div class="picbar" style="display:block;float:right;">
 			
-			<div class="col-md-3">
-				<a  href="#Our School"><img class="img-circle" src="P_20160416_105622.jpg" height="170" width="170px"><div>Our School</div></img></a><br><br><p>Inculcating Culture of Active Learning in the School</p>
+			<div class="col-md-3" style="text-align:center;">
+				<a  href="#Our School"><img class="img-circle" src="P_20160416_105622.jpg" height="170" width="170px"><p>Our School</p></img></a><br><p>Inculcating Culture of Active Learning in the School</p>
 			</div>
 			
 			<div class="col-md-3">
-				<a  href="#Student Life"><img class="img-circle" src="IMG-20160407-WA0058.jpg" height="170px" width="170px"><div>Student Life</div></img></a><br><br><p>Committed to educating and nurturing of all students so they may grow towards responsible global citizenship</p>
+				<a  href="#Student Life"><img class="img-circle" src="IMG-20160407-WA0058.jpg" height="170px" width="170px"><div>Student Life</div></img></a><br><p>Committed to educating and nurturing of all students so they may grow towards responsible global citizenship</p>
 			</div>
 			
 			<div class="col-md-3">
-				<a  href="#Academics"><img class="img-circle" src="P_20160416_105026.jpg" height="170px" width="170px"><div>Academics</div></img></a><br><br><p>Together we create a loving community of purposeful learning that focuses on the whole child;body,mind and spirit.</p>
+				<a  href="#Academics"><img class="img-circle" src="P_20160416_105026.jpg" height="170px" width="170px"><div>Academics</div></img></a><br><p>Together we create a loving community of purposeful learning that focuses on the whole child;body,mind and spirit.</p>
 			</div>
 			
 			<div class="col-md-3">
-				<a  href="#Non-Academic"><img class="img-circle"  src="Press Pic.jpg" height="170px" width="170px"><div>Non Academic</div></img></a><br><br><p>We encourage overall development of children through various extra curricular activities which facilitates creativity amongst them.</p>
+				<a  href="#Non-Academic"><img class="img-circle"  src="Press Pic.jpg" height="170px" width="170px"><div>Non Academic</div></img></a><br><p>We encourage overall development of children through various extra curricular activities which facilitates creativity amongst them.</p>
 		    </div>
 		
 		</ul>

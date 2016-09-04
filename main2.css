@@ -33,7 +33,7 @@ a{cursor:pointer;
 	}
 a:hover{color:darkblue;
 		}
-.sidenav {
+.sidenav>ul {
     margin: 0px;
     padding:0px;
     background-color: white;
@@ -44,16 +44,17 @@ a:hover{color:darkblue;
     height: 100%;
     font-size:20px;
     overflow:auto;
+    list-style-type:none;
 }
 
-.sidenav li a {
+.sidenav>ul>li>a {
     color: #385b9f;
     padding-left:20px;
     text-decoration: none;
     
 }
 
-.sidenav li {display: block;
+.sidenav>ul>li {display: block;
     text-align:left;
     padding:5px 0px 5px 0px;
     border-bottom:2px solid #eee;
@@ -75,10 +76,7 @@ a:hover{color:darkblue;
 }
 
 .navbar-brand img{position:relative;
-				  padding-left:30px;
-				  padding-top:0px;
-				  padding-left:0px;
-				  float:center;
+				  margin:auto;
 }
 
 
@@ -115,6 +113,38 @@ a:hover{color:darkblue;
   	position:relative;
   	
   	}
+  	
+  	
+  	
+ul.navbar-nav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.navbar-nav li:not(:first-child){display: none;}
+  ul.navbar-nav li.icon {
+	left:0;
+    display: inline;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.navbar-nav.responsive {position: relative;}
+  ul.navbar-nav.responsive li.icon {
+    position: absolute;
+    left: 0;
+    top: 0; 
+    z-index:100;  
+  }
+  ul.navbar-nav.responsive li {
+    float: none;
+    left:30px;
+    display: inline-block;
+  }
+  ul.navbar-nav.responsive li a {
+    display: block;
+    text-align: center;
+  }
+}
+
   	
 
   	
@@ -169,7 +199,7 @@ a:hover{color:darkblue;
 	}
 	
 .picbar {width:100%;
-			height:450px;
+			min-height:450px;
 			background-color:#fff;
 			padding-top:0px;
 			margin:none;
@@ -177,9 +207,11 @@ a:hover{color:darkblue;
 }
 
 
-.picbar>div{display:block;
+.picbar>div{display:table;
 			width:25%;
 			text-align:center;
+			padding:0px;
+			margin:auto;
 }
 
 
@@ -194,13 +226,25 @@ a:hover{color:darkblue;
 }
 
 .picbar>div>a>img{margin-bottom:10px;
+				
 }
 
-.piclist>div>p{text-align:center;
+.picbar>div>p{text-align:center;
 					
 					font-family:franklin gothic;
 					font-size:18px;
 }
 
-
+.news{ margin: 0px;
+    padding:0px;
+    background-color: white;
+    border: 1px solid #fff;
+	width:100%;
+    box-shadow:1px 1px 3px 2px #dfdfdf;
+    position:relative;
+    height: 100%;
+    font-size:20px;
+    overflow:auto;
+    min-height:300px;
+}
 
