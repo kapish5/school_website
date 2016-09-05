@@ -33,6 +33,9 @@ a{cursor:pointer;
 	}
 a:hover{color:darkblue;
 		}
+
+		
+
 .sidenav>ul {
     margin: 0px;
     padding:0px;
@@ -246,5 +249,24 @@ ul.navbar-nav li.icon {display: none;}
     font-size:20px;
     overflow:auto;
     min-height:300px;
+    text-align:center;
 }
 
+.sidebar{position:relative;
+height:100%;
+}
+
+.content{background-color:#fadfc9;
+		 width:100%;
+		 height:100%;
+}
+
+.modal-header, .close {
+      background-color: #385b9f;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
